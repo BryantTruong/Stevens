@@ -1,0 +1,16 @@
+#basically run as an if switch case
+
+0 *X** -> E 3 #move E if there is an empty space
+0 *E** -> X 1 #if something is blocking E switch to 1
+
+1 X*** -> N 0 #move N if there is an empty space
+1 N*** -> X 2 #if something is blocking N switch to 2
+
+2 **X* -> W 1 #If something is blocking W switch to 1
+2 **W* -> X 3 #move W if there is an empty space
+
+3 ***X -> S 2 #if something is blocking S switch to 2
+3 ***S -> X 0 #move S if there is an empty space
+
+
+
