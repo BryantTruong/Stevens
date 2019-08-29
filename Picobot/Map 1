@@ -1,0 +1,19 @@
+# * surroundings are not taken to account
+# x indicate to stay where you are
+
+# code can be done from either going west and then north or east and then south
+# going north/south then west/east will not work because it can no longer go west/east
+
+#to go to the bottom right corner
+0 *x** -> E 0
+0 *E*x -> S 0
+0 *E*S -> X 1
+
+#to move up and west
+1 x*** -> N 1
+1 N*** -> W 2
+
+# to move down and west
+2 ***x -> S 2
+2 ***S -> W 1
+
